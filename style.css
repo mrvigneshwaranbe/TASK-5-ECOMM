@@ -1,10 +1,14 @@
+
 body{
     margin:2.5%;
-    background-color:white;
+    background-color:rgb(230, 83, 83);
+}
+.navbar{
+    background-color:burlywood;
 }
 .buybtn{
     background-color:blue;
-    color:white
+    color:white;
 }
 .buybtn:hover{
     background-color:rgb(15, 1, 67);
@@ -32,3 +36,4 @@ body{
 i{  color:azure;
     font-size: 120%;
 }
+
