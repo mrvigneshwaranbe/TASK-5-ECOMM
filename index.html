@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <title>EBAY INDIA</title>
+    <link rel="icon" type="image/x-icon" href="img/cartimg.ico">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body >
+    <nav class="navbar navbar-expand-sm  navbar-light ">
+        <div class="container">
+            <a class="navbar-brand" href="#"><b>EBAY INDIA</b></a>
+            <a href="#" data-bs-toggle="offcanvas" data-bs-target="#cart"><img src="img/bx-shopping-bag.svg"></a>
+        </div>
+
+    </nav>
+    <div class="offcanvas offcanvas-end" id="cart">
+
+        <div class="offcanvas-body">
+            <div class="d-flex justify-content-end">
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+            </div>
+            <h3 class="offcanvas-title" style="text-align: center;">Your Cart</h3>
+            <div class="product" id="products">
+
+            </div>
+            <hr>
+            <div class="text-end">Total &#8377;<span id="price">0</span></div><br>
+            <div class="text-center">
+                <button type="button" class="buybtn btn btn-md" onclick="dis()">Buy Now</button>
+            </div>
+        </div>
+    </div>
+<div class="container">
+    <h2 class="heading mt-3" style="text-align: center;">Shop Products</h2>
+    <div class="card-group">
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-4">
+        <div class="col">
+            <div   id="product">
+            <img class="card-img-top"  src="img/bagpack.jpg">
+                <div class="card-body">
+                    <div class="card-title"><b>Riding Bag</b></div>
+                    <div class="card-text"><span>&#8377;1499</span>
+                    <button id="pic"onclick="add('img/bagpack.jpg','Riding Bag','1,499','1499',401)" data-bs-toggle="offcanvas" data-bs-target="#cart"><i class='bx bx-shopping-bag' ></i></i></button>
+                </div>
+            </div>
+                
+            
+        </div>
+       </div>
+        <div class="col">
+            <div   id="product" >
+                <img class="card-img-top" src="img/bikestand.jpg">
+                    <div class="card-body">
+                        <div class="card-title"><b>Bike Stand</b></div>
+                        <div class="card-text"><span>&#8377;699</span>
+                        <button id="pic"onclick="add('img/bikestand.jpg','Bike Stand','699','699',402)" data-bs-toggle="offcanvas" data-bs-target="#cart"><i class='bx bx-shopping-bag' ></i></button>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        <div class="col">
+            <div  id="product" >
+                <img class="card-img-top" src="img/intercomm.jpg">
+                    <div class="card-body">
+                        <div class="card-title"><b>Wireless Intercomm</b></div>
+                        <div class="card-text"><span>&#8377;1,499</span>
+                        <button id="pic"onclick="add('img/intercomm.jpg','Wireless Intercomm','1,499','1499',403)" data-bs-toggle="offcanvas" data-bs-target="#cart"><i class='bx bx-shopping-bag' ></i></button>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        <div class="col">
+            <div   id="product">
+                <img class="card-img-top" src="img/mobilestand.jpg">
+                    <div class="card-body">
+                        <div class="card-title"><b>Bike Mount Holder </b></div>
+                        <div class="card-text"><span>&#8377;695</span>
+                        <button id="pic"onclick="add('img/mobilestand.jpg','Bike Mount Holder','695','695',404)" data-bs-toggle="offcanvas" data-bs-target="#cart"><i class='bx bx-shopping-bag' ></i></button>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        <div class="col">
+            <div   id="product">
+                <img class="card-img-top" src="img/ridingglove.jpg">
+                    <div class="card-body">
+                        <div class="card-title"><b>Riding Gloves</b></div>
+                        <div class="card-text"><span>&#8377;999</span>
+                        <button id="pic"onclick="add('img/ridingglove.jpg','Riding Gloves','999','999',405)" data-bs-toggle="offcanvas" data-bs-target="#cart"><i class='bx bx-shopping-bag' ></i></button>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        <div class="col">
+            <div  id="product">
+                <img class="card-img-top" src="img/ridinghelmat.jpg">
+                    <div class="card-body">
+                        <div class="card-title"><b>Riding Helmet</b></div>
+                        <div class="card-text"><span>&#8377;2,400</span>
+                        <button id="pic"onclick="add('img/ridinghelmat.jpg','Riding Helmet','2,400','2400',406)" data-bs-toggle="offcanvas" data-bs-target="#cart"><i class='bx bx-shopping-bag' ></i></button>
+                    </div>
+                    </div>
+                
+            </div>
+        </div>
+        <div class="col">
+            <div   id="product">
+                <img class="card-img-top" src="img/soundbar.jpg">
+                    <div class="card-body">
+                        <div class="card-title"><b>Zebronics Soundbar</b></div>
+                        <div class="card-text"><span>&#8377;2,999</span>
+                        <button id="pic"onclick="add('img/soundbar.jpg','Zebronics Soundbar','2,999','2999',407)" data-bs-toggle="offcanvas" data-bs-target="#cart"><i class='bx bx-shopping-bag' ></i></button>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        <div class="col">
+            <div   id="product" >
+                <img class="card-img-top" src="img/toolbox.jpg">
+                    <div class="card-body">
+                        <div class="card-title"><b>DIY Toolbox for bikers</b></div>
+                        <div class="card-text"><span>&#8377;999</span>
+                        <button id="pic"onclick="add('img/toolbox.jpg','DIY Toolbox for bikers','999','999',408)" data-bs-toggle="offcanvas" data-bs-target="#cart"><i class='bx bx-shopping-bag' ></i></button>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+      </div>
+    </div>
+</div>
+
+
+<script src="script.js"></script>
+</body>
+</html>
